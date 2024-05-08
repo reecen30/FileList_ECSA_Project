@@ -214,7 +214,7 @@ const FileListCombined = ({nodeName}) => {
         <div className="flex flex-col sm:flex-row gap-4 mb-6">
           <input
             type="text"
-            placeholder="Search by Node or Document ID"
+            placeholder="Search by Folder Name or Document ID"
             value={searchTerm}
             onChange={handleSearchChange}
             className="p-2 border border-gray-300 rounded w-full focus:ring-blue-500 focus:border-blue-500"
@@ -223,7 +223,7 @@ const FileListCombined = ({nodeName}) => {
             onChange={handleSortChange}
             className="p-2 border border-gray-300 rounded w-full sm:w-auto focus:ring-blue-500 focus:border-blue-500"
           >
-            <option value="Node">Sort by Node</option>
+            <option value="Node">Sort by Folder Name</option>
             <option value="docId">Sort by Document ID</option>
             <option value="ModifiedDate">Sort by Modified Date</option>
           </select>
@@ -232,7 +232,7 @@ const FileListCombined = ({nodeName}) => {
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
-                <th scope="col" className="py-3 px-6">Node</th>
+                <th scope="col" className="py-3 px-6">Folder Name</th>
                 <th scope="col" className="py-3 px-6">Document ID</th>
                 <th scope="col" className="py-3 px-6">Modified Date</th>
                 <th scope="col" className="py-3 px-6">Actions</th>
